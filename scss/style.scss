@@ -2,10 +2,12 @@
 
 $color-yellow: #F9A826;
 $color-black: #273036;
-$color-white: #fff;
+$color-white: #f3f4f5;
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin-top: 3rem;
+    overflow-x: hidden;
 }
 
 /* ============ Navigation Bar =============== */
@@ -38,84 +40,104 @@ body {
 }
 
 /* ============ Hero  =============== */
+.hero {
+    background-color: $color-white;
 
-.custom-section {
-    width: inherit;
-    padding: 40px 0;
+    &__img {
+        img {
+            width: 100%;
+            position: relative;
+            top: 4rem;
 
-    .hero {
-        &__img {
-            img {
-                width: 100%;
-                position: relative;
-                top: 7rem;
+            @media (min-width: 768px) {
+                width: 70%;
+                position: absolute;
+                top: -20rem;
+                right: -5%;
+            }
 
-                @media (min-width: 768px) {
-                    width: 80%;
-                    position: absolute;
-                    top: -18rem;
-                    right: -10%;
-                }
+            @media (min-width: 992px) {
+                width: 90%;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
 
-                @media (min-width: 992px) {
-                    width: 100%;
-                    top: 0;
-                    right: 0;
-                }
+    &__text {
+        h2 {
+            font-weight: 700;
+            font-size: 53px;
+            color: $color-black;
+            margin-top: 30px;
+            margin-bottom: 0;
+            line-height: 1;
+            white-space: nowrap;
+
+            @media (min-width: 768px) {
+                font-size: 58px;
+                margin-top: 100px;
+            }
+
+            @media (min-width: 992px) {
+                font-size: 63px;
+
             }
         }
 
-        &__text {
-            h2 {
-                font-weight: 700;
-                font-size: 53px;
-                color: $color-black;
-                margin-top: 30px;
-                margin-bottom: 0;
-                line-height: 1;
-                white-space: nowrap;
-
-                @media (min-width: 768px) {
-                    font-size: 58px;
-                    margin-top: 100px;
-                }
-
-                @media (min-width: 992px) {
-                    font-size: 63px;
-
-                }
-            }
-
-            p {
-                color: $color-yellow;
-                font-size: 18px;
-                margin-top: 30px;
-            }
-
-            a {
-                display: inline-block;
-                padding: 8px 22px;
-                color: $color-black;
-                background-color: transparent;
-                border: 1px solid $color-black;
-                font-size: 18px;
-                margin-top: 30px;
-                text-decoration: none;
-                transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-
-                &:hover {
-                    background-color: $color-yellow;
-                }
-            }
+        p {
+            color: $color-yellow;
+            font-size: 18px;
+            margin-top: 30px;
         }
 
+        a {
+            display: inline-block;
+            padding: 8px 22px;
+            color: $color-black;
+            background-color: transparent;
+            border: 1px solid $color-black;
+            font-size: 18px;
+            margin-top: 30px;
+            text-decoration: none;
+            transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            &:hover {
+                background-color: $color-yellow;
+            }
+        }
     }
 }
+
+.wave {
+    margin-bottom: -10px;
+}
+
+/* ============ Project =============== */
+.project {
+    background-color: $color-black;
+    height: 100vh;
+}
+
+/* ============ About =============== */
+.about {
+    background-color: $color-white;
+    height: 100vh;
+
+}
+
+/* ============ Contact =============== */
+.contact {
+    background-color: $color-black;
+    height: 100vh;
+
+}
+
 
 /* ============ Footer =============== */
 
 .footer {
-    background-color: $color-black;
+    background-color: $color-white;
     padding-top: 6rem;
     padding-bottom: 2rem;
     position: relative;
@@ -142,7 +164,7 @@ body {
 
         a {
             margin-right: 10px;
-            color: $color-white;
+            color: $color-black;
 
             &:hover {
                 color: $color-yellow;
