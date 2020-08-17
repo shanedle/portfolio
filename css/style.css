@@ -122,6 +122,8 @@ body {
   font-size: 2.5rem;
   color: #F9A826;
   text-align: center;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
 }
 
 /* ============ About =============== */
@@ -130,10 +132,28 @@ body {
   height: 100vh;
 }
 
+.about__text h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #F9A826;
+  text-align: center;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
+}
+
 /* ============ Contact =============== */
 .contact {
   background-color: #273036;
   height: 100vh;
+}
+
+.contact__text h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #F9A826;
+  text-align: center;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
 }
 
 /* ============ Footer =============== */
