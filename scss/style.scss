@@ -3,6 +3,10 @@
 $color-yellow: #F9A826;
 $color-black: #273036;
 $color-white: #f3f4f5;
+$color-gray: #a6a6a6;
+$color-darkgray: #343434;
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,12 +24,12 @@ body {
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255, 255, 255, .8);
+    color: $color-gray;
 }
 
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .8);
+    color: $color-gray;
 }
 
 /* change the color of active or hovered links */
@@ -106,6 +110,7 @@ body {
                 background-color: $color-yellow;
             }
         }
+
     }
 }
 
@@ -116,7 +121,6 @@ body {
 /* ============ Project =============== */
 .project {
     background-color: $color-black;
-    height: 100vh;
 
     &__text {
         h1 {
@@ -124,7 +128,7 @@ body {
             font-size: 2.5rem;
             color: $color-yellow;
             text-align: center;
-            padding-top: 4.5rem;
+            padding-top: 5rem;
             padding-bottom: 3rem;
         }
 
@@ -134,7 +138,6 @@ body {
 /* ============ About =============== */
 .about {
     background-color: $color-white;
-    height: 100vh;
 
     &__text {
         h1 {
@@ -142,7 +145,7 @@ body {
             font-size: 2.5rem;
             color: $color-yellow;
             text-align: center;
-            padding-top: 4.5rem;
+            padding-top: 5rem;
             padding-bottom: 3rem;
         }
 
@@ -153,7 +156,6 @@ body {
 /* ============ Contact =============== */
 .contact {
     background-color: $color-black;
-    height: 100vh;
 
     &__text {
         h1 {
@@ -161,19 +163,35 @@ body {
             font-size: 2.5rem;
             color: $color-yellow;
             text-align: center;
-            padding-top: 4.5rem;
+            padding-top: 5rem;
             padding-bottom: 3rem;
+        }
+
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 0.5rem 3rem;
+        color: $color-white;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        font-size: 1rem;
+        margin-top: 30px;
+        text-decoration: none;
+        transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+        &:hover {
+            background-color: $color-yellow;
         }
 
     }
 
 }
 
-
 /* ============ Footer =============== */
 
 .footer {
-    background-color: $color-white;
+    background-color: $color-darkgray;
     padding-top: 6rem;
     padding-bottom: 2rem;
     position: relative;
@@ -200,7 +218,7 @@ body {
 
         a {
             margin-right: 10px;
-            color: $color-black;
+            color: $color-white;
 
             &:hover {
                 color: $color-yellow;
