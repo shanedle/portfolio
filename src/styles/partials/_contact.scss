@@ -1,0 +1,70 @@
+/* ============ Contact =============== */
+
+.contact {
+    background-color: $color-black;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    
+	.section-header {
+        margin-bottom: 3rem;
+        h1 {
+            color: $color-yellow;
+        }
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.contact {
+		.section-header {
+			h1 {
+				max-width: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+
+.contact-form {
+    background: $color-white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+    color: $color-black;
+    padding: 1.5rem;
+    
+    &__button {
+        background: $color-yellow !important;
+        color: $color-black !important;
+        border: 1px solid $color-black  !important;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:active:focus    {
+            background: $color-yellow-hover !important;
+            color: $color-white !important;
+            border: 1px solid $color-black  !important;
+        }
+        &:hover,
+        &:focus,
+        &.focus {
+            background: $color-yellow-hover !important;
+            color: $color-white !important;
+            border: 1px solid $color-black  !important;
+        }
+      
+        &:active,
+        &.active,
+        &.disabled,
+        &:disabled {
+            background: $color-yellow-hover !important;
+            color: $color-white !important;
+            border: 1px solid $color-black  !important;
+      
+          &:focus,
+          &.focus {
+            background: $color-yellow-hover !important;
+            color: $color-white !important;
+            border: 1px solid $color-black  !important;
+          }
+        }
+    }
+}       
